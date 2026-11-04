@@ -1,0 +1,6 @@
+.veny/
+__pypache__/
+*.pyc
+.vscode/
+.idea/
+.DS_Store
