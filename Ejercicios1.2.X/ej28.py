@@ -1,12 +1,16 @@
-import math
+import math #para añadir la raiz cuadrada utilizada en la funcion area_calculo
 
 def pedir_decimal(decimal)-> float:
-    
+    """
+    Funcion para pedir un numero float
+    """
     return float(input(decimal))
 
 
 def lados_triangulos()-> float:
-
+    """
+    Funcion para pedir los datos de los lado del triangulo
+    """
     
     num1 = pedir_decimal("Introduce un lado del triangulo(cm): ")
     num2 = pedir_decimal("Introduce el segundo lado del triangulo(cm): ")
@@ -14,6 +18,9 @@ def lados_triangulos()-> float:
     return num1, num2, num3
 
 def area_calculo(a:float,b:float,c:float)->float:
+    """
+    Funcion para el calculo del semiperimetro y del area del triangulo
+    """
     
     s:float=(a + b + c)/2
     area:float = math.sqrt(s * (s - a) * (s - b) * (s - c))
