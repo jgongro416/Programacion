@@ -12,14 +12,17 @@ def pedir_entero(mensaje: str) -> int:
 def main():
 
     cantidadIntegrantes:int = pedir_entero("Cuantas personas sois en total: ")
-    nombre:str=""
+    grupoA:str=""
+    grupoB:str=""
     while cantidadIntegrantes!= 0:
         nombreEj=pedir_nombre_sexo("Dime que nombre tiene el integrante: ")
         sexoEJ=pedir_nombre_sexo("Dime que genero es(F/M): ")
-        if sexoEJ=="F" and nombreEj>="m" or sexoEJ=="M" and nombreEj<"n":
-            grupoA=+ nombreEj+", "
-        if sexoEJ=="F" and nombreEj<"m" or sexoEJ=="M" and nombreEj>="n":
-            grupoB=+ nombreEj+", "
+        sexoEJ=sexoEJ.upper()
+        primeraLetra=nombreEj[0].upper()
+        if sexoEJ=="F" and primeraLetra>="M" or sexoEJ=="M" and primeraLetra<"N":
+            grupoA += (nombreEj + ", ")
+        if sexoEJ=="F" and primeraLetra<"M" or sexoEJ=="M" and primeraLetra>="N":
+            grupoB += (nombreEj + ", ")
         cantidadIntegrantes-=1
     print(grupoA)
     print(grupoB)    
