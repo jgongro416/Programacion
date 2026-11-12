@@ -1,0 +1,11 @@
+2026-11-12 16:45:15,737 - DEBUG - Venta solicitada: stock=10, cantidad=77
+2026-11-12 16:45:15,738 - ERROR - Stock insuficiente: disponibles=10, solicitadas=77
+2026-11-12 16:46:46,107 - DEBUG - Venta solicitada: stock=10, cantidad=77
+2026-11-12 16:46:46,108 - ERROR - Stock insuficiente: disponibles=10, solicitadas=77
+2026-11-12 16:48:33,921 - DEBUG - Venta solicitada: stock=10, cantidad=77
+2026-11-12 16:48:33,921 - ERROR - Stock insuficiente: disponibles=10, solicitadas=77
+2026-11-12 16:49:00,812 - DEBUG - Venta solicitada: stock=10, cantidad=7
+2026-11-12 16:49:00,812 - INFO - Venta realizada: 7 unidades
+2026-11-12 16:49:00,812 - WARNING - Stock bajo: quedan 3 unidades
+2026-11-12 16:49:03,773 - DEBUG - Venta solicitada: stock=3, cantidad=88
+2026-11-12 16:49:03,774 - ERROR - Stock insuficiente: disponibles=3, solicitadas=88
